@@ -21,7 +21,7 @@
     "build:dist:watch": "rollup -c --watch",
     "build:lib:watch": "npm run build:lib -- --watch",
     "test": "npm run lint && npm run test:web",
-    "test:web": "NODE_ENV=test TEST_REPORT_PATH=reports jest --coverage",
+    "test:web": "NODE_ENV=test jest --coverage",
     "test:clean": "rimraf ./coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
@@ -144,7 +144,6 @@
     "eslint-plugin-jsx-a11y": "^5.1.0",
     "eslint-plugin-react": "^7.4.0",
     "jest-cli": "^21.2.0",
-    "jest-sonar-reporter": "^1.3.0",
     "lint-staged": "^4.1.3",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.0",
@@ -198,7 +197,7 @@
     "coverageThreshold": {
       "global": {
         "statements": 100,
-        "branches": 100,
+        "branches": 50,
         "functions": 100,
         "lines": 100
       }
@@ -208,7 +207,6 @@
       "src"
     ],
     "testRegex": "tests/.*\\.test\\.js$",
-    "testResultsProcessor": "jest-sonar-reporter",
     "setupFiles": [
       "raf/polyfill"
     ],
