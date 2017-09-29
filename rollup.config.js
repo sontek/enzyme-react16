@@ -57,7 +57,7 @@ const plugins = [
 if (prod) plugins.push(uglify(), visualizer({ filename: './bundle-stats.html' }));
 
 export default {
-  input: 'src/index.js',
+  input: 'src/Nav.js',
   sourcemap: true,
   name: pkg.name,
   external: ['react', 'react-dom', 'prop-types'],
