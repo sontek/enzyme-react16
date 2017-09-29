@@ -5,6 +5,12 @@ export default class CustomizerNav extends React.PureComponent {
     isLive: false,
   };
 
+  onToggleLive = () => {
+    this.setState({
+      isLive: !this.state.isLive,
+    });
+  }
+
   render() {
     return (
       <div>

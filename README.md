@@ -5,10 +5,10 @@ enzyme-react16 test reproduction npm package.
 ## Table of Contents
 
   - [Changelog](#changelog)
+  - [How it work](#how-it-work)
+  - [Installation](#installation)
   - [Reminders](#reminders)
   - [Quick start](#quick-start)
-  - [Release](#release)
-  - [License](#license)
 
 ---
 
